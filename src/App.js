@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
 import "fontsource-roboto";
-import { Container, Typography } from "@material-ui/core";
+import { Container, Typography, Grid } from "@material-ui/core";
 import ValidacoesCadastro from "./components/contexts/ValidacoesCadastro";
 
 import {
@@ -22,6 +22,7 @@ class App extends Component {
         >
           Formulário de Cadastro
         </Typography>
+
         <ValidacoesCadastro.Provider
           value={{ cpf: validarCPF, senha: validarSenha }}
         >
