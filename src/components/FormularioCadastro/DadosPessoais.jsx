@@ -17,7 +17,7 @@ function DadosPessoais({ aoEnviar }) {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        if (possoEnviar) {
+        if (possoEnviar()) {
           aoEnviar({ nome, sobrenome, cpf, promocoes, novidades });
         }
       }}
@@ -29,6 +29,7 @@ function DadosPessoais({ aoEnviar }) {
         }}
         id="nome"
         label="Nome"
+        required
         variant="outlined"
         margin="normal"
         fullWidth
@@ -41,6 +42,7 @@ function DadosPessoais({ aoEnviar }) {
         }}
         id="sobrenome"
         label="Sobrenome"
+        required
         variant="outlined"
         margin="normal"
         fullWidth
@@ -57,6 +59,7 @@ function DadosPessoais({ aoEnviar }) {
         id="cpf"
         name="cpf"
         label="CPF"
+        required
         variant="outlined"
         margin="normal"
         fullWidth

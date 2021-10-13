@@ -60,6 +60,7 @@ function DadosEntrega({ aoEnviar }) {
         type="text"
         variant="outlined"
         margin="normal"
+        style={{ marginLeft: "20px" }}
       />
       <TextField
         value={cidade}

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 function useErros(validacoes) {
-  const [erros, setErros] = useState({ senha: { valido: true, texto: "" } });
+  const [erros, setErros] = useState({
+    cpf: { valido: true, texto: "" },
+    senha: { valido: true, texto: "" },
+  });
 
   function validarCampos(event) {
     const { name, value } = event.target;
