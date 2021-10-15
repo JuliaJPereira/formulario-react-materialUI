@@ -4,6 +4,6 @@ Este projeto de estudo foi desenvolvido em **React**, com objetivo de aprender a
 
 ## Preview
 
-[![](./src/imagem.jpeg)]()
+[![](./src/imagem.gif)]()
 
 - Para acessar o projeto, [cliquei aqui.](https://juliajpereira-formulario-react.netlify.app/)
